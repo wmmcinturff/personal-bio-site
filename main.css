@@ -1,8 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 5px;
+    padding: 5px;
 }
 
 body {
-    background-color: cadetblue;
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+ul {
+    background-color: cornsilk;
+    list-style-type: none;
+    margin: 5px;
+    padding: 5px;
 }

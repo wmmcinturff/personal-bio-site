@@ -40,10 +40,33 @@ const projects = [
   },
 ]
 
-  const buildProjectCards = () => {
-    let domString = "";
+
+const printToDom = (divId, textToPrint) => {
+  const selectedDiv = document.getElementById(divId);
+  selectedDiv.innerHTML = textToPrint;
+
 }
 
-for(let i=0; i < projects.length; i++) {
+  const createProjectCards = () => {
+    let domString = '';
+
+for (let i=0; i < projects.length; i++) {
+        domString += `<div class="card my-2" style="width: 18rem;" id="${i}">  
+        <p class="title">${projects[i].title}</p>
+        <img src=${projects[i].url} class="card-img-top" 
+        alt="This is an image of ${projects[i].screenshot}">
+       <div class="card-body">
+       <p class="description">${projects[i].description}</p>
+       <p class="description">${projects[i].technologiesUsed}</p>
+       <p class="available">${projects[i].available}</p>
+       <img src=${projects[i].githubUrl} class="card-img-bottom" alt="This is an image of ${projects[i].githubUrl}">
+       </div>
+       </div>`
+}   
+
+
+  printToDom('projectsPage', domString)
+
+  }
+createProjectCards(projects);
     
-}
