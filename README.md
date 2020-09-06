@@ -9,5 +9,9 @@ This site was built as an individual assignment at Nashville Software School. Th
 * HTML
 * CSS
 * JavaScript
+
+### Deployed
+[![Netlify Status](https://api.netlify.com/api/v1/badges/657c5646-2592-4ed6-b79e-c917780714e6/deploy-status)](https://app.netlify.com/sites/musing-lovelace-84e8f9/deploys)
+
 ### Credits/Contributors
  * [Wanda McInturff](https://github.com/wmmcinturff)
